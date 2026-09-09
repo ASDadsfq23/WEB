@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Особистий веб-сайт Іванюка Євгена</title>
 </head>
 <body>
-    <h1>My Webpage</h1>
+
+    <!-- Заголовок сторінки та меню навігації -->
+    <header>
+        <h1>Особистий веб-сайт Іванюка Євгена</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#about">Про мене</a></li>
+                <li><a href="#practicals">Практичні роботи</a></li>
+                <li><a href="#labs">Лабораторні заняття</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Секція "Головна" -->
+        <section id="home">
+            <h1>Головна сторінка</h1>
+            <p>Цей веб-сайт створено для публікації звітів, практичних та лабораторних завдань.</p>
+        </section>
+
+        <!-- Секція "Про мене" -->
+        <section id="about">
+            <h1>Про мене</h1>
+            <figure>
+                <img src="Profile Picture.jpg" alt="Фотографія Іванюка Євгена" width="400">
+                <figcaption>Улюблена пора року - літо</figcaption>
+            </figure>
+            <article>
+                <h3>Біографічна довідка</h3>
+                <p><strong>Студент:</strong> Іванюк Євген</p>
+                <p><strong>Навчальний заклад:</strong> Державний університет інформаційно-комунікаційних технологій</p>
+                <p><strong>Спеціальність / Група:</strong> ТЦР-22<p>
+                <p><strong>Роки навчання:</strong> 2025-2029 </p>
+                <p><strong>Біографія:</strong> Народився в Київській області.</p>
+            </article>
+        </section>
+
+        <!-- Секція "Практичні роботи" -->
+        <section id="practicals">
+            <h1>Практичні роботи</h1>
+            <ul>
+                <li>
+                    <h><a href="practical/practice-1/index.html">Практична робота №1: Основи HTML</a></h3>
+                    <p><strong>Опис:</strong> Створення структури персонального сайту за стандартами HTML5, налаштування навігації та створення сторінки з календарем розкладу занять за вересень місяць.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Секція "Лабораторні заняття" -->
+        <section id="labs">
+            <h1>Лабораторні заняття</h1>
+            <ul>
+                <li>
+                    <h3><a href="labs/lab-1/index.html">Лабораторна робота №1:</a></h3>
+                    <p><strong>Опис:</strong>.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Футер сайту -->
+    <footer id="contacts">
+        <h1>Контактна інформація</h1>
+        <address>
+            <p><strong>Email:</strong> <a href="mailto:{email студента}">google@gmail.com</a></p>
+            <p><strong>Телефон:</strong> +380000000000</p>
+        </address>
+        <p><strong>Корисні посилання:</strong></p>
+        <ul>
+            <li><a href="https://github.com/ASDadsfq23/WEB" target="_blank" rel="noopener noreferrer">Мій GitHub Репозиторій</a></li>
+            <li><a href="https://www.linkedin.com/in/yevhen-ivaniuk-a696011ab/" target="_blank" rel="noopener noreferrer">Профіль у соцмережі</a></li>
+        </ul>
+        <p>&copy; 2025-2029 Іванюк Євген</p>
+    </footer>
+
 </body>
 </html>
