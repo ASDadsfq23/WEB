@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1 - Форма реєстрації</title>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <h1>Лабораторна робота №1. Основи HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">← Головна сторінка</a></li>
+                <li><a href="../../index.html#labs">← Список лабораторних занять</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Форма реєстрації користувача</h2>
+            <p>Заповніть форму нижче для створення облікового запису. Поля з позначкою (*) є обов'язковими для заповнення.</p>
+
+            <form action="https://webhook.site/2dfdc3eb-17c2-4e5d-8359-b1546e4935c8" method="POST">
+                <fieldset>
+                    <legend>Персональні дані</legend>
+
+                    <p>
+                        <label for="first-name">Ім'я *:</label><br>
+                        <input type="text" id="first-name" name="first_name" required placeholder="Введіть ваше ім'я">
+                    </p>
+
+                    <p>
+                        <label for="last-name">Прізвище *:</label><br>
+                        <input type="text" id="last-name" name="last_name" required placeholder="Введіть ваше прізвище">
+                    </p>
+
+                    <p>
+                        <label for="birth-date">Дата народження:</label><br>
+                        <input type="date" id="birth-date" name="birth_date">
+                    </p>
+
+                    <p>
+                        <label for="gender">Стать:</label><br>
+                        <select id="gender" name="gender">
+                            <option value="">-- Оберіть стать --</option>
+                            <option value="male">Чоловіча</option>
+                            <option value="female">Жіноча</option>
+                            <option value="other">Інше</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Дані облікового запису</legend>
+
+                    <p>
+                        <label for="user-email">Електронна пошта *:</label><br>
+                        <input type="email" id="user-email" name="email" required placeholder="example@mail.com">
+                    </p>
+
+                    <p>
+                        <label for="user-password">Пароль *:</label><br>
+                        <input type="password" id="user-password" name="password" required>
+                    </p>
+
+                    <p>
+                        <label for="confirm-password">Підтвердження паролю *:</label><br>
+                        <input type="password" id="confirm-password" name="confirm_password" required>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Зареєструватися">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <p>&copy; 2025-2029 Іванюк Євген</p>
+        <p><a href="../../index.html#labs">Повернутися до списку лабораторних</a></p>
+    </footer>
+
+</body>
+</html>
