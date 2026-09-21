@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота №2. Основи CSS</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <h1>Практична робота №2. Основи CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">← Головна сторінка</a></li>
+                <li><a href="../../index.html#practicals">← Список практичних робіт</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Форма реєстрації користувача</h2>
+            <p>Практична демонстрація роботи з селекторами, властивостями відступів, тінями та позиціюванням.</p>
+            <form action="https://webhook.site/2dfdc3eb-17c2-4e5d-8359-b1546e4935c8" method="POST" class="registration-form">
+                <fieldset class="form-group">
+                    <legend>Персональні дані</legend>
+
+                    <p>
+                        <label for="first-name">Ім'я <span class="required-star">*</span>:</label>
+                        <input type="text" id="first-name" name="first_name" required placeholder="Введіть ваше ім'я">
+                    </p>
+
+                    <p>
+                        <label for="last-name">Прізвище <span class="required-star">*</span>:</label>
+                        <input type="text" id="last-name" name="last_name" required placeholder="Введіть ваше прізвище">
+                    </p>
+
+                    <p>
+                        <label for="birth-date">Дата народження:</label>
+                        <input type="date" id="birth-date" name="birth_date">
+                    </p>
+
+                    <p>
+                        <label for="gender">Стать:</label>
+                        <select id="gender" name="gender">
+                            <option value="">-- Оберіть стать --</option>
+                            <option value="male">Чоловіча</option>
+                            <option value="female">Жіноча</option>
+                            <option value="other">Інше</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend>Дані облікового запису</legend>
+
+                    <p>
+                        <label for="user-email">Електронна пошта <span class="required-star">*</span>:</label>
+                        <input type="email" id="user-email" name="email" required placeholder="example@mail.com">
+                    </p>
+
+                    <p>
+                        <label for="user-password">Пароль <span class="required-star">*</span>:</label>
+                        <input type="password" id="user-password" name="password" required>
+                    </p>
+
+                    <p>
+                        <label for="confirm-password">Підтвердження паролю <span class="required-star">*</span>:</label>
+                        <input type="password" id="confirm-password" name="confirm_password" required>
+                    </p>
+                </fieldset>
+
+                <div class="form-actions">
+                    <input type="submit" value="Зареєструватися" class="btn-submit">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <p>&copy; 2025-2029 Іванюк Євген</p>
+        <p><a href="../../index.html#practicals">Повернутися до списку практичних</a></p>
+    </footer>
+
+</body>
+</html>

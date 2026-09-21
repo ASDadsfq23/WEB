@@ -1,0 +1,170 @@
+:root {
+    --bg-page: rgba(10, 10, 10, 0.824);
+    --bg-card: #19191adc;
+    --text-main: #f1f1f1;
+    --text-muted: #ccccd1;
+    --primary-color: #3b82f6;
+    --primary-hover: #60a5fa;
+    --border-color: #33333c;    
+    --input-bg: #272730;
+    --shadow-color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+    text-shadow: 0 0 8px rgba(96, 165, 250, 0.4);
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.form-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.form-container p {
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.registration-form {
+    background-color: var(--bg-card);
+    color: var(--text-main);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.form-group legend {
+    text-align: center;
+    font-weight: 600;
+    padding: 0 8px;
+    color: var(--primary-hover);
+}
+
+.form-group p {
+    margin: 0 0 15px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: -6px;
+    color: var(--text-main);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: var(--input-bg);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="date"] {
+    color-scheme: dark;
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer; 
+    border-radius: 8px;
+    padding: 3px;
+    transition: background-color 0.1s ease, filter 0.1s ease;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    background-color: rgba(62, 130, 238, 0.219);
+    filter: drop-shadow(0 0 4px var(--primary-hover));
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 131, 246, 0.507);
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+.required-star {
+    color: #ff484b;        
+    font-weight: bold;
+    text-shadow: 0 0 6px rgba(255, 76, 79, 0.7);   
+    margin-left: 2px;
+}
