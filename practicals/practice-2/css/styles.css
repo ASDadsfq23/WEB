@@ -93,7 +93,7 @@ nav li {
 label {
     display: block;
     font-weight: 500;
-    margin-bottom: -6px;
+    margin-bottom: 6px;
     color: var(--text-main);
 }
 
@@ -128,6 +128,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="date"]::-webkit-calendar-picker-indicator:hover {
     background-color: rgba(62, 130, 238, 0.219);
     filter: drop-shadow(0 0 4px var(--primary-hover));
+}
+
+input [type="password"] {
+    color-scheme: dark;
+}
+
+input[type="password"]::-ms-reveal {
+    transform: scale(0.90);
+    cursor: pointer;
+    filter: invert(90%);
 }
 
 input:focus,
