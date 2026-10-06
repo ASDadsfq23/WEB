@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична/Лабораторна 3 - Головна сторінка Youtube використовуючи Flexbox</title>
+     <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+     <header class="header">
+        <div class="header__left">
+            <button class="header__menu-btn">☰</button>
+            <a href="../../" class="header__logo" title ="YouTube Home">
+                <span class="logo-icon">▶</span>
+                <span class="logo-text">YouTube</span>
+                <sup class="logo-country">UA</sup>
+            </a>
+        </div>
+
+        <div class="header__search">
+            <div class="header__search-box">
+                <input type="text" class="header__search-input" placeholder="Search">
+                <button class="header__search-button" title="Search">🔍</button>
+            </div>
+            <button class="header__mic-button" title="Search with your voice">🎤</button>
+        </div>
+
+        <div class="header__actions">
+            <button class="header__create-btn">
+                <span class="create-icon">+</span>
+                <span>Create</span>
+            </button>
+
+            <button class="header__action-button" title="Notifications">🔔</button>
+            <div class="header__profile">
+                <img src="Profile_Picture.jpg" alt="Profile Picture" class="header__profile-img">
+            </div>
+        </div>
+     </header>
+
+    <!-- Main content -->
+    <div class="app-layout">
+
+        <aside class="sidebar">
+
+    <!-- Section 1: Main Navigation -->
+        <div class="sidebar__section">
+            <ul class="sidebar__menu">
+                <li class="sidebar__item sidebar__item--active">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">🏠</span>
+                        <span class="sidebar__text">Home</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">⚡</span>
+                        <span class="sidebar__text">Shorts</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 2: Subscriptions -->
+        <div class="sidebar__section">
+            <div class="sidebar__heading">
+                <a href="#" class="sidebar__heading-link" title="Subscriptions">
+                    <span>Subscriptions</span>
+                    <span class="sidebar__heading-arrow">›</span>
+                </a>
+            </div>
+            <ul class="sidebar__menu">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__avatar"></span>
+                        <span class="sidebar__text">Kendrick Lamar</span>
+                        <span class="sidebar__dot"></span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__avatar"></span>
+                        <span class="sidebar__text">Pikabooirl</span>
+                        <span class="sidebar__dot"></span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__avatar"></span>
+                        <span class="sidebar__text">Sodapoppin</span>
+                        <span class="sidebar__dot"></span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__avatar"></span>
+                        <span class="sidebar__text">Burned Time Machine</span>
+                        <span class="sidebar__dot"></span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__avatar"></span>
+                        <span class="sidebar__text">The Weeknd</span>
+                        <span class="sidebar__dot"></span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__avatar"></span>
+                        <span class="sidebar__text">vanbios</span>
+                        <span class="sidebar__dot"></span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__avatar"></span>
+                        <span class="sidebar__text">Zy0x</span>
+                        <span class="sidebar__dot"></span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">⌄</span>
+                        <span class="sidebar__text">Show more</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 3: You -->
+        <div class="sidebar__section">
+            <div class="sidebar__heading">
+                <a href="#" class="sidebar__heading-link" title="You">
+                    <span>You</span>
+                    <span class="sidebar__heading-arrow">›</span>
+                </a>
+            </div>
+            <ul class="sidebar__menu">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">👤</span>
+                        <span class="sidebar__text">Your channel</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">🕒</span>
+                        <span class="sidebar__text">History</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">📑</span>
+                        <span class="sidebar__text">Playlists</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">⏱</span>
+                        <span class="sidebar__text">Watch later</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">👍</span>
+                        <span class="sidebar__text">Liked videos</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">🎬</span>
+                        <span class="sidebar__text">Your videos</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">📥</span>
+                        <span class="sidebar__text">Downloads</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">🎓</span>
+                        <span class="sidebar__text">Courses</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">⌃</span>
+                        <span class="sidebar__text">Show less</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 4: Explore -->
+        <div class="sidebar__section">
+            <div class="sidebar__heading">
+                <span class="sidebar__heading-static">Explore</span>
+            </div>
+            <ul class="sidebar__menu">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">🎵</span>
+                        <span class="sidebar__text">Music</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">🎬</span>
+                        <span class="sidebar__text">Movies</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">🎮</span>
+                        <span class="sidebar__text">Gaming</span>
+                    </a>
+                </li>
+                 <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">📰</span>
+                        <span class="sidebar__text">News</span>
+                    </a>
+                </li>
+                 <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">⚽</span>
+                        <span class="sidebar__text">Sports</span>
+                    </a>
+                </li>
+                 <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">🎓</span>
+                        <span class="sidebar__text">Learning</span>
+                    </a>
+                </li>
+                 <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">🛣️</span>
+                        <span class="sidebar__text">Playables</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">⭐</span>
+                        <span class="sidebar__text">Memberships</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">⌃</span>
+                        <span class="sidebar__text">Show less</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 5: More from YouTube -->
+        <div class="sidebar__section">
+            <div class="sidebar__heading">
+                <span class="sidebar__heading-static">More from YouTube</span>
+            </div>
+            <ul class="sidebar__menu">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon-red">▶</span>
+                        <span class="sidebar__text">YouTube Music</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon-red">▶</span>
+                        <span class="sidebar__text">YouTube Kids</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 6: Report history-->
+        <div class="sidebar__section">
+            <ul class="sidebar__menu">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon">⚑</span>
+                        <span class="sidebar__text">Report history</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </aside>
+
+    
+    <!-- Main content -->
+        <main class="main-content">
+
+            <!-- Category-filter -->
+            <nav class="chips-bar">
+                <button class="chip chip--active">All</button>
+                <button class="chip">Games</button>
+                <button class="chip">Music</button>
+                <button class="chip">Live</button>
+                <button class="chip">Podcast</button>
+                <button class="chip">Playlist</button>
+                <button class="chip">Cartoons</button>
+                <button class="chip">Recent Uploads</button>
+                <button class="chip">Watched</button>
+                <button class="chip">New to you</button>
+            </nav>
+
+            <!-- Video Section -->
+            <section class="video-grid">
+
+                <!-- Video 1 -->
+                <article class="video-card">
+                    <div class="video-card__thumbnail-wrapper">
+                        <img src="https://img.youtube.com/vi/flMCsyj8x7I/maxresdefault.jpg" alt="Прев'ю відео" class="video-card__thumbnail">
+                        <span class="video-card__duration">58:15</span>
+                    </div>
+                    <div class="video-card__details">
+                        <div class="video-card__avatar"></div>
+                        <div class="video-card__info">
+                            <h3 class="video-card__title">100% Speedrunning Jacksmith Is Brutal</h3>
+                            <p class="video-card__channel">EazySpeezy</p>
+                            <p class="video-card__meta">2.3M views 11mo ago</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Video 2 -->
+                <article class="video-card">
+                    <div class="video-card__thumbnail-wrapper">
+                        <img src="https://img.youtube.com/vi/BB10RFl0Zuk/maxresdefault.jpg" alt="Прев'ю відео" class="video-card__thumbnail">
+                        <span class="video-card__duration">11:58:30</span>
+                    </div>
+                    <div class="video-card__details">
+                        <div class="video-card__avatar"></div>
+                        <div class="video-card__info">
+                            <h3 class="video-card__title">Vanilla Elwynn Forest - Music & Ambiance  - WoW  Classic  - 12 Hours</h3>
+                            <p class="video-card__channel">LittleSun</p>
+                            <p class="video-card__meta">133K views 6y ago</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Video 3 -->
+                <article class="video-card">
+                    <div class="video-card__thumbnail-wrapper">
+                        <img src="https://img.youtube.com/vi/dZSgAVv5VZM/hqdefault.jpg" alt="Прев'ю відео" class="video-card__thumbnail">
+                        <span class="video-card__duration">4:51</span>
+                    </div>
+                    <div class="video-card__details">
+                        <div class="video-card__avatar"></div>
+                        <div class="video-card__info">
+                            <h3 class="video-card__title">Marco Garau's Magic Opera - Elixir of Life</h3>
+                            <p class="video-card__channel">Power Metal Power Legion</p>
+                            <p class="video-card__meta">2.7K views 5y ago</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Video 4 -->
+                <article class="video-card">
+                    <div class="video-card__thumbnail-wrapper">
+                        <img src="https://img.youtube.com/vi/RiZVjfjgNyY/maxresdefault.jpg" alt="Прев'ю відео" class="video-card__thumbnail">                        <span class="video-card__duration">4:38</span>
+                    </div>
+                    <div class="video-card__details">
+                        <div class="video-card__avatar"></div>
+                        <div class="video-card__info">
+                            <h3 class="video-card__title">"I'm God" by Clams Casino and Imogen Heap</h3>
+                            <p class="video-card__channel">Clams Casino</p>
+                            <p class="video-card__meta">32M views 6y ago</p>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+    </div>
+
+
+</body>
+</html>
