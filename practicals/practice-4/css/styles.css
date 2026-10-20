@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    background-color: #151516; 
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.keyboard-case {
+    background-color: #181717;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), inset 0 2px 2px rgba(255, 255, 255, 0.05);
+    border: 1px solid #222;
+    display: flex;
+    gap: 24px;
+}
+
+.main-keys, .nav-keys, .numpad {
+    display: grid;
+    grid-auto-rows: 40px;
+    gap: 4px;
+}
+
+.main-keys, .nav-keys, .numpad {
+    grid-template-rows: 52px repeat(5, 40px);
+}
+
+.main-keys {
+    grid-template-columns: repeat(60, 7px);
+}
+
+.nav-keys {
+    grid-template-columns: repeat(3, 40px);
+}
+
+.numpad {
+    grid-template-columns: repeat(4, 40px);
+}
+
+.numpad .n-tall {
+    grid-column: 4;
+    grid-row: span 2;
+    height: 100%;
+}
+
+.row-f {
+    align-self: start;
+    height: 40px;
+}
+
+.key-link {
+    text-decoration: none;
+    display: contents;
+}
+
+.key {
+    background-color: #242424;
+    color: #dfdfdf;
+    border-radius: 5px;
+    border: 1px solid #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 4px 0 #080808, 0 5px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.05s, box-shadow 0.05s, background-color 0.1s;
+}
+
+.key:hover:not(.accent) {
+    background-color: #333;
+    color: #fff;
+}
+
+.key:active {
+    transform: translateY(4px);
+    box-shadow: 0 0px 0 #080808, 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.accent {
+    background-color: #c62828;
+    color: #fff;
+    box-shadow: 0 4px 0 #7f1d1d, 0 5px 5px rgba(0, 0, 0, 0.5);
+    border-color: #a82020;
+}
+
+.accent:hover {
+    background-color: #d32f2f;
+}
+
+.accent:active {
+    box-shadow: 0 0px 0 #7f1d1d, 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* === Пропорції для основного блоку === */
+.u-1 { grid-column: span 4; }       /* Квадрат */
+.u-1-25 { grid-column: span 5; }    /* Ctrl/Alt */
+.u-1-5 { grid-column: span 6; }     /* Tab */
+.u-1-75 { grid-column: span 7; }    /* Caps Lock */
+.u-2 { grid-column: span 8; }       /* Backspace */
+.u-2-25 { grid-column: span 9; }    /* Enter, Shift */
+.u-2-75 { grid-column: span 11; }   /* Правий Shift */
+.u-6-25 { grid-column: span 25; }   /* Пробіл */
+
+/* Відступи в ряду F1-F12 */
+.gap-f-esc { grid-column: span 4; }
+.gap-f-half { grid-column: span 2; }
+
+/* Пропорції Numpad та Навігації */
+.n-wide { grid-column: span 2; }        /* нуль на Numpad */
+.n-tall { grid-row: span 2; }           /* + та Enter */
+.nav-spacer { grid-column: span 3; }    /* Порожній ряд над стрілками */
+.numpad-spacer { grid-column: span 4; } /* Порожній ряд над Numpad */
+.nav-empty { grid-column: span 1; }     /* Порожня клітинка біля стрілки Вгору */
