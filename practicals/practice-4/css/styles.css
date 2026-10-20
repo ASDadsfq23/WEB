@@ -68,7 +68,8 @@ body {
     border: 1px solid #111;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 3px;
+    align-items: start;
     font-size: 12px;
     font-weight: 500;
     cursor: pointer;
