@@ -90,6 +90,10 @@ nav li {
     text-align: left;
 }
 
+select {
+    font-style: italic;
+}
+
 label {
     display: block;
     font-weight: 500;

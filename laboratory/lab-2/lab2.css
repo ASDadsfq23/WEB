@@ -61,3 +61,7 @@ p:first-letter {
 a::after {
     content: "↗";
 }
+
+.special::after {
+    content: " +";
+}
