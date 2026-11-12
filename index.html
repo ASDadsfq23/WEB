@@ -4,125 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Особистий веб-сайт Іванюка Євгена</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <!-- Заголовок сторінки та меню навігації -->
-    <header>
-        <h1>Особистий веб-сайт Іванюка Євгена</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Головна</a></li>
-                <li><a href="#about">Про мене</a></li>
-                <li><a href="#practicals">Практичні роботи</a></li>
-                <li><a href="#labs">Лабораторні заняття</a></li>
-                <li><a href="#contacts">Контакти</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container-wide header__inner">
+            <a href="#home" class="header__logo">Іванюк Євген</a>
+            <nav>
+                <ul class="nav__list">
+                    <li><a href="#about">Про мене</a></li>
+                    <li><a href="#practicals">Практичні роботи</a></li>
+                    <li><a href="#labs">Лабораторні роботи</a></li>
+                    <li><a href="#featured">Найцікавіші роботи</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- Секція "Головна" -->
-        <section id="home">
-            <h2>Головна сторінка</h2>
-            <p>Цей веб-сайт створено для публікації звітів, практичних та лабораторних завдань.</p>
+        <!-- Hero секція ("Головна" + "Про мене") -->
+        <section id="about" class="hero container">
+            <div class="hero__content" id="home">
+                <h1>Особистий веб-сайт<br>Іванюка Євгена</h1>
+                <p class="hero__subtitle">Цей веб-сайт створено для публікації звітів, практичних та лабораторних завдань.</p>
+                
+                <article class="bio-card">
+                    <h3>Біографічна довідка</h3>
+                    <p><strong>Студент:</strong> Іванюк Євген</p>
+                    <p><strong>Навчальний заклад:</strong> Державний університет інформаційно-комунікаційних технологій</p>
+                    <p><strong>Спеціальність / Група:</strong> ТЦР-22</p>
+                    <p><strong>Роки навчання:</strong> 2025–2029</p>
+                    <p><strong>Біографія:</strong> Народився в Україні.</p>
+                </article>
+
+                <div class="hero__actions">
+                    <a href="#labs" class="hero__btn">Переглянути лабораторні</a>
+                    <a href="https://github.com/ASDadsfq23/WEB" target="_blank" rel="noopener noreferrer" class="hero__btn hero__btn--outline">GitHub Репозиторій</a>
+                </div>
+            </div>
+
+            <figure class="hero__figure">
+                <img src="Profile_Picture.jpg" alt="Фотографія Іванюка Євгена" width="400">
+                <figcaption>Літо - найкраща пора року</figcaption>
+            </figure>
         </section>
 
-        <!-- Секція "Про мене" -->
-        <section id="about">
-            <h2>Про мене</h2>
-            <figure>
-                <img src="Profile_Picture.jpg" alt="Фотографія Іванюка Євгена" width="400">
-                <figcaption>Улюблена пора року - літо</figcaption>
-            </figure>
-            <article>
-                <h3>Біографічна довідка</h3>
-                <p><strong>Студент:</strong> Іванюк Євген</p>
-                <p><strong>Навчальний заклад:</strong> Державний університет інформаційно-комунікаційних технологій</p>
-                <p><strong>Спеціальність / Група:</strong> ТЦР-22</p>
-                <p><strong>Роки навчання:</strong> 2025-2029 </p>
-                <p><strong>Біографія:</strong> Народився в Київській області.</p>
+        <!-- Секція на блакитному фоні: зліва практичні, справа лабораторні -->
+        <div class="works-wrapper">
+            <div class="container works-grid">
+                
+                <!-- Секція "Практичні роботи" (Зліва) -->
+                <section id="practicals" class="work-card">
+                    <h2>Практичні роботи</h2>
+                    <ul class="work-list">
+                        <li>
+                            <a href="practicals/practice-1/index.html" class="work-item-link">
+                                <h3>Практична №1: Основи HTML</h3>
+                                <p>Створення структури персонального сайту за стандартами HTML5 та сторінки з календарем розкладу занять.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="practicals/practice-2/index.html" class="work-item-link">
+                                <h3>Практична №2: Основи CSS</h3>
+                                <p>Практична демонстрація роботи з базовими селекторами, властивостями відступів, тінями та позиціюванням.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="laboratory/lab-3/index.html" class="work-item-link">
+                                <h3>Практична №3: Основи Flexbox</h3>
+                                <p>Верстка адаптивної копії головної сторінки відеосервісу YouTube з використанням технології FlexBox.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="practicals/practice-4/index.html" class="work-item-link">
+                                <h3>Практична №4: Основи Grid</h3>
+                                <p>Створення інтерактивної сторінки з дизайном повнорозмірної клавіатури за допомогою сітки CSS Grid.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="work-item-link">
+                                <h3>Практична №5: Верстка портфоліо</h3>
+                                <p>Допрацювання головної сторінки сайту відповідно до макета Figma з адаптацією блоків під навчальні роботи.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="laboratory/lab-6/index.html" class="work-item-link">
+                                <h3>Практична №6: Анімація та спрайти</h3>
+                                <p>Створення анімованої сцени з покемоном за допомогою покрокових CSS-спрайтів (@keyframes, steps) та руху фону.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="labs" class="work-card">
+                    <h2>Лабораторні заняття</h2>
+                    <ul class="work-list">
+                        <li>
+                            <a href="laboratory/lab-1/index.html" class="work-item-link">
+                                <h3>Лабораторна №1: Основи HTML</h3>
+                                <p>Створення форми реєстрації користувача з різними типами полів введення та перевіркою POST-запиту на Webhook.site.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="laboratory/lab-2/index.html" class="work-item-link">
+                                <h3>Лабораторна №2: Основи CSS</h3>
+                                <p>Застосування комбінаторів, псевдокласів стану та псевдоелементів для стилізації документа без зміни розмітки.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="laboratory/lab-3/index.html" class="work-item-link">
+                                <h3>Лабораторна №3: Основи FlexBox</h3>
+                                <p>Верстка адаптивної копії головної сторінки відеосервісу YouTube з використанням технології FlexBox.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="laboratory/lab-4/index.html" class="work-item-link">
+                                <h3>Лабораторна №4: Основи Grid</h3>
+                                <p>Створення багатоколонкової сторінки тижневого планера за графічним шаблоном за допомогою сітки CSS Grid.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="work-item-link">
+                                <h3>Лабораторна №5: Верстка портфоліо</h3>
+                                <p>Допрацювання головної сторінки сайту відповідно до макета Figma з адаптацією блоків під навчальні роботи.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="laboratory/lab-6/index.html" class="work-item-link">
+                                <h3>Лабораторна №6: Анімація та спрайти</h3>
+                                <p>Створення анімованої сцени з покемоном за допомогою покрокових CSS-спрайтів (@keyframes, steps) та руху фону.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Секція "Найцікавіші лабораторні" з живими прев'ю сторінок -->
+        <section id="featured" class="featured container">
+            <h2>Найцікавіші лабораторні</h2>
+
+            <article class="featured-item">
+                <a href="laboratory/lab-6/index.html" class="featured-item__preview" aria-label="Відкрити Лабораторну №6">
+                    <iframe src="laboratory/lab-6/index.html" title="Прев'ю Лабораторної №6" loading="lazy" tabindex="-1"></iframe>
+                </a>
+                <div class="featured-item__info">
+                    <h3><a href="laboratory/lab-6/index.html">Анімація з використанням CSS та спрайтів</a></h3>
+                    <div class="featured-item__meta">
+                        <span class="badge">2026</span>
+                        <span class="work-tag">Лабораторна робота №6</span>
+                        <span class="category">CSS Keyframes & Steps</span>
+                    </div>
+                    <p>Створення анімованої сцени з покемоном Генгаром за допомогою покрокових CSS-спрайтів (<code>@keyframes</code>, <code>steps</code>) та безшовного руху фону.</p>
+                </div>
+            </article>
+
+            <article class="featured-item">
+                <a href="laboratory/lab-4/index.html" class="featured-item__preview" aria-label="Відкрити Лабораторну №4">
+                    <iframe src="laboratory/lab-4/index.html" title="Прев'ю Лабораторної №4" loading="lazy" tabindex="-1"></iframe>
+                </a>
+                <div class="featured-item__info">
+                    <h3><a href="laboratory/lab-4/index.html">Тижневий планер на CSS Grid</a></h3>
+                    <div class="featured-item__meta">
+                        <span class="badge">2026</span>
+                        <span class="work-tag">Лабораторна робота №4</span>
+                        <span class="category">CSS Grid Layout</span>
+                    </div>
+                    <p>Створення багатоколонкової сторінки планера за шаблоном із використанням сітки CSS Grid та стилізованих елементів списку.</p>
+                </div>
+            </article>
+
+            <article class="featured-item">
+                <a href="laboratory/lab-3/index.html" class="featured-item__preview" aria-label="Відкрити Лабораторну №3">
+                    <iframe src="laboratory/lab-3/index.html" title="Прев'ю Лабораторної №3" loading="lazy" tabindex="-1"></iframe>
+                </a>
+                <div class="featured-item__info">
+                    <h3><a href="laboratory/lab-3/index.html">Копія головної сторінки YouTube</a></h3>
+                    <div class="featured-item__meta">
+                        <span class="badge">2026</span>
+                        <span class="work-tag">Лабораторна робота №3</span>
+                        <span class="category">Flexbox & Layout</span>
+                    </div>
+                    <p>Верстка інтерфейсу відеохостингу з фіксованою навігацією та адаптивною сіткою відеокарток за допомогою FlexBox.</p>
+                </div>
             </article>
         </section>
-        <br>
-        <!-- Секція "Практичні роботи" -->
-        <section id="practicals">
-            <h2>Практичні роботи</h2>
-            <ul>
-                <li>
-                    <h3><a href="practicals/practice-1/index.html">Практична робота №1: Основи HTML</a></h3>
-                    <p><strong>Опис:</strong> Створення структури персонального сайту за стандартами HTML5, налаштування навігації та створення сторінки з календарем розкладу занять за вересень місяць.</p>
-                </li>
-                <li>
-                    <h3><a href="practicals/practice-2/index.html">Практична робота №2: Основи CSS</a></h3>
-                    <p><strong>Опис:</strong> Практична демонстрація роботи з селекторами, властивостями відступів, тінями та позиціюванням.</p>
-                </li>
-                 <li>
-                    <h3><a href="laboratory/lab-3/index.html">Практична робота №3: Основи Flexbox</a></h3>
-                    <p><strong>Опис:</strong> Створення копії головної сторінки Youtube використовуюючи FlexBox.</p>
-                </li>
-                <li>
-                    <h3><a href="practicals/practice-4/index.html">Практична робота №4: Основи Grid</a></h3>
-                    <p><strong>Опис:</strong> Ствроення сторінки з дизайном full-size клавіатури використовуючи Grid. .</p>
-                </li>
-                <li>
-                    <h3><a href="practicals/practice-5/index.html">Практична робота №5: ----------------</a></h3>
-                    <p><strong>Опис:</strong> ------------------------. .</p>
-                </li>
-               <li>
-                    <h3><a href="laboratory/lab-6/index.html">Практична робота №6: Анімація з використанням CSS та спрайтів</a></h3>
-                    <p><strong>Опис:</strong> Створення анімованої сцени з покемоном за допомогою покрокових CSS-спрайтів (@keyframes, steps) та анімованого ефекту руху фону.</p>
-                </li>
-            </ul>
-        </section>
-        <br>
-        <!-- Секція "Лабораторні заняття" -->
-        <section id="labs">
-            <h2>Лабораторні заняття</h2>
-            <ul>
-                <li>
-                    <h3><a href="laboratory/lab-1/index.html">Лабораторна робота №1: Основи HTML</a></h3>
-                    <p><strong>Опис:</strong> Створення форми реєстрації користувача з використанням тегів, різних типів полів введення та перевірки надсилання POST-запиту на сервіс Webhook.site</p>
-                </li>
-                <li>
-                    <h3><a href="laboratory/lab-2/index.html">Лабораторна робота №2: Основи CSS</a></h3>
-                    <p><strong>Опис:</strong> Практика застосування комбінаторів, псевдокласів стану та псевдоелементів для стилізації документа без зміни HTML-розмітки.</p>
-                </li>
-                <li>
-                    <h3><a href="laboratory/lab-3/index.html">Лабораторна робота №3: Основи FlexBox</a></h3>
-                    <p><strong>Опис:</strong> Створення копії головної сторінки Youtube використовуюючи FlexBox.</p>
-                </li>
-                <li>
-                    <h3><a href="laboratory/lab-4/index.html">Лабораторна робота №4: Основи Grid</a></h3>
-                    <p><strong>Опис:</strong> Створення сторінки планера за шаблоном. </p>
-                </li>
-                 <li>
-                    <h3><a href="laboratory/lab-5/index.html">Лабораторна робота №5: --------</a></h3>
-                    <p><strong>Опис:</strong> ----------------. </p>
-                </li>
-                <li>
-                    <h3><a href="laboratory/lab-6/index.html">Лабораторна робота №6: Анімація з використанням CSS та спрайтів</a></h3>
-                    <p><strong>Опис:</strong> Створення анімованої сцени з покемоном за допомогою покрокових CSS-спрайтів (@keyframes, steps) та анімованого ефекту руху фону.</p>
-                </li>
-            </ul>
-        </section>
     </main>
-    <br>
 
-    <!-- Футер сайту -->
-    <footer id="contacts">
-        <h2>Контактна інформація</h2>
-        <address>
-            <p><strong>Email:</strong> <a href="mailto:google@gmail.com">google@gmail.com</a></p>
-            <p><strong>Телефон:</strong> +380000000000</p>
-        </address>
-        <br>
-        <p><strong>Корисні посилання:</strong></p>
-        <ul>
-            <li><a href="https://github.com/ASDadsfq23/WEB" target="_blank" rel="noopener noreferrer">Мій GitHub Репозиторій</a></li>
-            <li><a href="https://www.linkedin.com/in/yevhen-ivaniuk-a696011ab/" target="_blank" rel="noopener noreferrer">Профіль у LinkedIn</a></li>
-        </ul>
-        <p>&copy; 2025-2029 Іванюк Євген</p>
+  <!-- Футер сайту -->
+    <footer id="contacts" class="footer">
+         <div class="footer__socials">
+            <a href="https://github.com/ASDadsfq23/WEB" target="_blank" rel="noopener noreferrer" aria-label="Мій GitHub Репозиторій" class="social-link">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/yevhen-ivaniuk-a696011ab/" target="_blank" rel="noopener noreferrer" aria-label="Профіль у LinkedIn" class="social-link">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <p class="footer__copy">&copy; 2025-2029 Іванюк Євген</p>
     </footer>
 
 </body>
